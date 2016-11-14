@@ -6,8 +6,8 @@ public class Module extends AbstractModule{
 
     @Override
     protected void configure() {
-        bind(IRead.class).to(Reader.class);
-        bind(IPrint.class).to(Printer.class);
+        bind(IReader.class).to(Reader.class);
+        bind(IPrinter.class).to(Printer.class);
     }
 
 }

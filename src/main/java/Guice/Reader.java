@@ -6,16 +6,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Reader implements IRead{
+public class Reader implements IReader {
 
-    private Printer printer;
-    private List<String> words;
     private String text;
+    private List<String> words;
 
     @Inject
     public Reader(String text) {
-        this.words = new ArrayList<>();
         this.text = text;
+        this.words = new ArrayList<>();
     }
 
 

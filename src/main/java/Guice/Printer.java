@@ -2,7 +2,7 @@ package Guice;
 
 import com.google.inject.Inject;
 
-public class Printer implements IPrint{
+public class Printer implements IPrinter {
 
     private Reader reader;
     private String separator;

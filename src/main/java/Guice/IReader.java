@@ -2,7 +2,7 @@ package Guice;
 
 import java.util.List;
 
-public interface IRead {
+public interface IReader {
 
     List<String> words(String text);
 

@@ -1,6 +1,6 @@
 package Guice;
 
-public interface IPrint {
+public interface IPrinter {
 
     void print(String message);
 
