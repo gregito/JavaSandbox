@@ -12,6 +12,7 @@ public class Main {
     private static IReader read = null;
     private static final String TEXT = "Lorem ipsum dolor sit amet, vestibulum nibh turpis sapien ac, " +
             "lorem habitant venenatis gravida arcu, integer at dignissim.";
+
     static {
         injector = Guice.createInjector(new Module());
         print = injector.getInstance(IPrinter.class);
@@ -24,6 +25,9 @@ public class Main {
         print.print("Szöveg");
         System.out.println();
         read.printWords(read.words(TEXT));
+
+        System.out.println("\nTemp folder: " + System.getProperty("java.io.tmpdir") + "\n");
+
         logger.info("The program has terminated.");
     }
 
